@@ -8,7 +8,6 @@
 body
 {
     color: #ededed;
-   
 }
 .header
 {
@@ -83,12 +82,12 @@ z-index: 100;
     border: 2px solid #0ef;
     border-radius: 50%;
     font-size: 20px;
-    color: rgb(85, 226, 236);
+    background-color: grey;
     text-decoration: none;
     margin: 30px 15px 0;
 }
 .home-sci a:hover{
-background: #0ef;
+background: rgb(9, 203, 224);
 color: #081b29;
 box-shadow: 0 0 20 px #0ef;
 }
