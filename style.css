@@ -8,6 +8,7 @@
 body
 {
     color: #ededed;
+   
 }
 .header
 {
@@ -48,7 +49,7 @@ z-index: 100;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(https://www.hdwallpapers.in/download/glow-wide.jpg) no-repeat;
+    background: url(https://i.ibb.co/BqkycgM/Web-Photo-Editor.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
