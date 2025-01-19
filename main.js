@@ -1,7 +1,4 @@
-var typed= new typed(".lol", {
-    Strings:["Web Developer" , "Java with DSA", "Fronted Developer"],
-    typeSeed:100,
-    backSpeed:100,
-    backDelay:1000,
-    loop:true
+var typed = new Typed('.text', {
+    strings: ['Web Developer', 'Jva with DSA','Forntend Developer'],
+    typeSpeed: 50,
 });

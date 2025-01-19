@@ -9,13 +9,14 @@ body
 {
     color: #ededed;
 }
-.header
+.header 
 {
 position: fixed;
 top: 0;
 left: 0;
-width: 100;
+width: 100%;
 padding: 20px 10%;
+background: transparent;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -28,6 +29,9 @@ z-index: 100;
    color: #fff;
    text-decoration: none;
    font-weight: 600;
+   cursor: default;
+   opacity: 0;
+   animation: slideRight 1s ease forwards;
 }
 .navbar a
 {
@@ -38,7 +42,8 @@ z-index: 100;
     font-weight: 500;
     margin-left: 30px;
     transition: .3s;
-    left: 40px;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
    
 }
 .navbar a:hover{
@@ -67,6 +72,12 @@ z-index: 100;
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+}
+.home-content h3:mth-of-typed(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span {
+    color: #0ef;
 }
 .home-content h1{
     font-size: 56px;
@@ -113,4 +124,26 @@ box-shadow: 0 0 5px cyan,
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    0%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    0%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
