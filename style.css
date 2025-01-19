@@ -31,7 +31,7 @@ z-index: 100;
    font-weight: 600;
    cursor: default;
    opacity: 0;
-   animation: slideRight .1s ease forwards;
+   animation: slideRight 1s ease forwards;
 }
 .navbar a
 {
@@ -131,7 +131,7 @@ box-shadow: 0 0 5px cyan,
         transform: translateX(-100px);
         opacity: 0;
     }
-    0%{
+    100%{
         transform: translatex(0px);
         opacity: 1;
     }
@@ -142,7 +142,7 @@ box-shadow: 0 0 5px cyan,
         transform: translateY(100px);
         opacity: 0;
     }
-    0%{
+    100%{
         transform: translateY(0px);
         opacity: 1;
     }
