@@ -29,18 +29,23 @@ z-index: 100;
    text-decoration: none;
    font-weight: 600;
 }
-.navbar
+.navbar a
 {
     display: inline-block;
     font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 30px;
     transition: .3s;
+    left: 40px;
+   
 }
 .navbar a:hover{
     color: #0ef;
+    /* box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan */
 }
 .home
 {
@@ -89,8 +94,23 @@ z-index: 100;
 .home-sci a:hover{
 background: rgb(9, 203, 224);
 color: #081b29;
-box-shadow: 0 0 20 px #0ef;
+box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
 }
 .btn-box{
-  
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
 }
