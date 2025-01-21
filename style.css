@@ -8,19 +8,22 @@
 body
 {
     color: #ededed;
+    background-color: #081b29;
 }
 .header 
 {
-position: fixed;
+position:fixed;
 top: 0;
 left: 0;
 width: 100%;
-padding: 20px 10%;
-background: transparent;
+padding: 10px 10%;
+background: #051129;
 display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 100;
+margin-bottom: auto;
+margin-top: auto;
 }
 .logo
 {
@@ -44,6 +47,7 @@ z-index: 100;
     transition: .3s;
     opacity: 0;
     animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
    
 }
 .navbar a:hover{
@@ -78,6 +82,11 @@ z-index: 100;
 }
 .home-content p {
     margin-top: 21px;
+}
+.home-content h3:mth-of-type(2){
+ margin-bottom: 30px;
+ animation: slidetop  1s easy forwards;
+ animation-delay: .7s;
 }
 .home-content h3 span {
     color: #0ef;
@@ -114,7 +123,7 @@ z-index: 100;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s*var);
+    animation-delay: calc(.2s*var(--i));
 }
 .home-sci a:hover{
 background: rgb(9, 203, 224);
@@ -133,12 +142,107 @@ box-shadow: 0 0 5px cyan,
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+
 }
 .btn-box:hover{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
 }
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rm;
+}
+.about-text imag{
+padding-bottom: 20%;
+max-width: 600px;
+height: auto;
+width: 100%;
+border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 680;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 19px;
+    line-height: 1.7;
+    /* margin-left: 4rem; */
+    margin-bottom: 70px;
+}
+.about-text a {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes slideRight {
     0%{
