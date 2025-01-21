@@ -48,9 +48,9 @@ z-index: 100;
 }
 .navbar a:hover{
     color: #0ef;
-    /* box-shadow: 0 0 5px cyan,
+    box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan */
+    0 0 100px cyan, 0 0 200px cyan
 }
 .home
 {
@@ -72,6 +72,9 @@ z-index: 100;
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: sildeBottom 1s ease forwards;
+    animation-delay:  .7s;
 }
 .home-content p {
     margin-top: 21px;
@@ -83,9 +86,16 @@ z-index: 100;
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 .home-content p {
     font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+   
 }
 .home-sci a
 {
@@ -101,6 +111,10 @@ z-index: 100;
     background-color: grey;
     text-decoration: none;
     margin: 30px 15px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var);
 }
 .home-sci a:hover{
 background: rgb(9, 203, 224);
@@ -136,10 +150,30 @@ box-shadow: 0 0 5px cyan,
         opacity: 1;
     }
 }
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
 
 @keyframes slidetop {
     0%{
         transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes sildeBottom {
+    0%{
+        transform: translateY(-100px);
         opacity: 0;
     }
     100%{
